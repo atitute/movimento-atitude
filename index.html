@@ -11,56 +11,39 @@
       background: #f9f9f9;
       color: #222;
     }
-
     header {
       background: #d72638;
       color: white;
       padding: 20px;
       text-align: center;
     }
-
     nav {
       text-align: center;
       background: #333;
       padding: 10px;
     }
-
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
     }
-
     nav a:hover {
       text-decoration: underline;
     }
-
-    .bloco {
+    section {
       padding: 40px 20px;
       max-width: 1000px;
-      margin: 40px auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: auto;
     }
-
-    .bloco img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-
     footer {
       background: #222;
       color: white;
       text-align: center;
       padding: 20px;
     }
-
     h2 {
       color: #d72638;
     }
-
     .botao {
       background: #d72638;
       color: white;
@@ -70,11 +53,9 @@
       border: none;
       cursor: pointer;
     }
-
     .botao:hover {
       background: #a91b2e;
     }
-
     form {
       max-width: 500px;
       margin: 20px auto;
@@ -82,12 +63,16 @@
       flex-direction: column;
       gap: 12px;
     }
-
     input, textarea {
       padding: 10px;
       font-size: 1rem;
       border: 1px solid #ccc;
       border-radius: 5px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
   </style>
 </head>
@@ -103,10 +88,9 @@
     <a href="#contato">Contato</a>
   </nav>
 
-  <section id="sobre" class="bloco">
+  <section id="sobre">
     <h2>Quem Somos</h2>
     <p>Somos uma organização sem fins lucrativos que promove transformação social por meio de educação, cultura e empreendedorismo.</p>
-    <img src="https://via.placeholder.com/800x400?text=Foto+Quem+Somos" alt="Quem somos">
   </section>
 
   <section id="projetos" class="bloco">
@@ -117,11 +101,19 @@
       <li>Atividades de saúde e bem-estar</li>
       <li>Empreendedorismo e renda</li>
     </ul>
-    <img src="https://via.placeholder.com/800x400?text=Foto+Projetos" alt="Projetos em ação">
+
+    <div style="margin-top: 30px;">
+      <img src="imagens/voluntariado.jpg" alt="Foto do Dia do Voluntariado" style="border-radius:10px; margin-bottom:20px;">
+      <p><em>Dia do Voluntariado — agradecemos a todos os que se dedicam com o coração.</em></p>
+
+      <img src="imagens/solidariedade.jpg" alt="Foto da Ação de Solidariedade" style="border-radius:10px; margin-top:20px;">
+      <p><em>Solidariedade em foco — uma ação que marcou o Dia das Crianças com alegria e união.</em></p>
+    </div>
+
     <p><a href="#contato" class="botao">Quero ser voluntário</a></p>
   </section>
 
-  <section id="contato" class="bloco">
+  <section id="contato">
     <h2>Contato</h2>
     <form action="https://formspree.io/f/xdkzjyzo" method="POST">
       <input type="text" name="nome" placeholder="Seu nome" required>
