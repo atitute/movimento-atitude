@@ -1,132 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Movimento Atitude</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #222;
-    }
-    header {
-      background: #d72638;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      text-align: center;
-      background: #333;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    h2 {
-      color: #d72638;
-    }
-    .botao {
-      background: #d72638;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-    }
-    .botao:hover {
-      background: #a91b2e;
-    }
-    form {
-      max-width: 500px;
-      margin: 20px auto;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    input, textarea {
-      padding: 10px;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Movimento Atitude</h1>
-    <p>Transformando vidas com cultura, educação e empreendedorismo</p>
-  </header>
+<section id="projetos" class="bloco">
+  <h2>Projetos</h2>
+  <ul>
+    <li>Formação de jovens</li>
+    <li>Eventos culturais</li>
+    <li>Atividades de saúde e bem-estar</li>
+    <li>Empreendedorismo e renda</li>
+  </ul>
 
-  <nav>
-    <a href="#sobre">Quem Somos</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
-  </nav>
+  <div style="margin-top: 30px;">
+    <!-- Agora a imagem de Solidariedade aparece primeiro -->
+    <img src="imagens/solidariedade.jpg" alt="Foto da Ação de Solidariedade" style="border-radius:10px; margin-bottom:20px;">
+    <p><em>Solidariedade em foco — uma ação que marcou o Dia das Crianças com alegria e união.</em></p>
 
-  <section id="sobre">
-    <h2>Quem Somos</h2>
-    <p>Somos uma organização sem fins lucrativos que promove transformação social por meio de educação, cultura e empreendedorismo.</p>
-  </section>
+    <!-- Depois a imagem de Voluntariado -->
+    <img src="imagens/voluntariado.jpg" alt="Foto do Dia do Voluntariado" style="border-radius:10px; margin-top:20px;">
+    <p><em>Dia do Voluntariado — agradecemos a todos os que se dedicam com o coração.</em></p>
+  </div>
 
-  <section id="projetos" class="bloco">
-    <h2>Projetos</h2>
-    <ul>
-      <li>Formação de jovens</li>
-      <li>Eventos culturais</li>
-      <li>Atividades de saúde e bem-estar</li>
-      <li>Empreendedorismo e renda</li>
-    </ul>
-
-    <div style="margin-top: 30px;">
-      <img src="imagens/voluntariado.jpg" alt="Foto do Dia do Voluntariado" style="border-radius:10px; margin-bottom:20px;">
-      <p><em>Dia do Voluntariado — agradecemos a todos os que se dedicam com o coração.</em></p>
-
-      <img src="imagens/solidariedade.jpg" alt="Foto da Ação de Solidariedade" style="border-radius:10px; margin-top:20px;">
-      <p><em>Solidariedade em foco — uma ação que marcou o Dia das Crianças com alegria e união.</em></p>
-    </div>
-
-    <p><a href="#contato" class="botao">Quero ser voluntário</a></p>
-  </section>
-
-  <section id="contato">
-    <h2>Contato</h2>
-    <form action="https://formspree.io/f/xdkzjyzo" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-      <button type="submit" class="botao">Enviar</button>
-    </form>
-    <p>Email: institutoatitudeong@gmail.com</p>
-    <p>Instagram: <a href="https://instagram.com/movimento.atitude" target="_blank">@movimento.atitude</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Movimento Atitude – Todos os direitos reservados</p>
-  </footer>
-</body>
-</html>
+  <p><a href="#contato" class="botao">Quero ser voluntário</a></p>
+</section>
